@@ -1,9 +1,11 @@
+import apm from './rum'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+apm.setInitialPageLoadName("Greeting Page")
 ReactDOM.render(
   <React.StrictMode>
     <App/>
