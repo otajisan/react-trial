@@ -5,7 +5,10 @@ const apm = initApm({
   serviceVersion: '0.0.1',
 
   serverUrl: process.env.REACT_APP_ELASTIC_APM_SERVER_URL,
-  environment: process.env.REACT_APP_ENV
+  environment: process.env.REACT_APP_ENV,
+  distributedTracingOrigins: [
+    'http://localhost:8080',
+  ],
 });
 
 export default apm;
